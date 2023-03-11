@@ -125,3 +125,46 @@ input:checked ~ img {
     height: 12rem;
 }
 }
+@media screen and (width <956px) {
+    label {
+        text-align: center;
+    }
+    
+}
+@media screen  and (width <765px){
+     input:checked ~ img {
+  
+    height: 10rem;
+}
+}
+@media screen  and (width <572px){
+     input:checked ~ img {
+  
+    height: 7rem;
+}
+}
+@media screen  and (width <460px){
+     input:checked ~ img {
+  
+    height: 6rem;
+}
+}
+@media screen  and (width <320px){
+     input:checked ~ img {
+  
+    height: 5rem;
+}
+}
+
+@media screen  and (width >1520px){
+     input:checked ~ img {
+  
+    height: 17rem;
+}
+}
+@media screen  and (width >1920px){
+     input:checked ~ img {
+  
+    height: 19rem;
+}
+}
