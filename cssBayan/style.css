@@ -67,7 +67,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* border: 0.1em solid black; */
+
 }
 .acc {
     display: flex;
@@ -76,140 +76,52 @@ h1 {
 .bayan {
     width: 30%;
     height: 20%;
-    padding: 1% 0;
-    margin-top: 1%;
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;
-    border-top: 0.1em solid lightgray;
     border-bottom: 0.1em solid lightgray;
-    /* border: 0.1em solid black; */
+
 }
 
 img {
     display: block;
  width: 100%;
     height: 0;
-  
-        height: 0;
     overflow: hidden;
     transition: all .5s linear;
-    margin-top: 1em;
 
-border-radius: 1em;
+border-radius: 20%;
+
 }
 input {
-    /* margin-left: 27em; */
     width: 0;
     height: 0;
     transition: all .3s linear;
     appearance: none;
 }
-.plus {
-    display: inline-block;
-        font-weight: bold;
-    /* font-size: 2em;
-    vertical-align: sub; */
-    /* margin-left: 11em; */
-    
-    transition: .2s all linear;
-}
 
 label:hover {
     color: blue;
 }
-span:hover {
-    transform: rotate(45deg);
-    transition: .2s all linear;
-}
+
 input:checked ~ label {
     color: blue;
 }
 input:checked ~ img {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
     cursor: grab;
-    height: 1%;
-    transition: all .5s linear;
+    transition: all .3s linear;
+    height: 14rem;
 }
-input:checked + span:hover {
-    background-color: black;
-}
-label:hover ~ img {
-     height: 1%;
-    color: blue;
-}
-input:checked ~ span {
-    transform: rotate(45deg);
-}
-
-
-
-
-
-
-/* .title:hover  {
-    color: blue;
-    opacity: 1;
-} */
-
-/* span:hover ~ label:hover {
-    opacity: 1;
-    transform: rotate(45deg);
-    transition: .2s all linear;
-} */
-/* input+label::before {
-    content: '+';
-    font-weight: bold;
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-} */
-/* img-first {
-    width: 60%;
-    height: 60%;
-} */
-
  label {
       font-size: calc( (100vw - 30rem)/(80 - 30) * (1.5 - 1) + 1rem);
-
-    cursor: pointer;
-    
+    cursor: pointer; 
 }
 
-/* label {
-    font-size: 2em;
-    margin-left: 2em;
-    cursor: pointer;
-}
-label:hover {
-    color: blue;
-}
-
-input:checked ~ label {
-    transform: rotate(45deg);
-    transition: all .3s linear;
-    color: blue;
-}
-.wrapper input:checked ~ img {
-height: 19em;
-transition: all .5s linear;
-
-} */
-
-
-/* .first {
-  position: relative;
-  width: 18px;
-  height: 18px;
-  border: 1px solid #50514f;
-  margin-right: 8px;
-} */
-
-/* .first::before {
-content: "+";
-    font-weight: 900;
-    position: absolute;
-    transform: translate(-50%, -63%);
+@media screen and (width < 1100px) {
+    input:checked ~ img {
   
-    font-size: 50px;
-} */
+    height: 12rem;
+}
+}
