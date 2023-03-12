@@ -1,0 +1,273 @@
+body {
+width: 100%;
+height: 100%;
+background-color: lightgoldenrodyellow;
+}
+h1 {
+font-size: 3em;
+margin: 2em 0 0 0;
+font-size: calc( (100vw - 30rem)/(80 - 30) * (1.5 - 1) + 1rem);
+}
+.wrapper {
+margin: 1em auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.acc {
+display: flex;
+justify-content: space-evenly;
+}
+.bayan {
+width: 30%;
+height: 20%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+border-bottom: 0.1em solid lightgray;
+
+}
+.one {
+margin-left: 56%;
+}
+.two {
+margin-left: 11.6%;
+}
+.three {
+margin-left: 30%;
+}
+.four {
+margin-left: 30%;
+}
+.five {
+margin-left: 18.5%;
+}
+img {
+display: block;
+ width: 70%;
+height: 0;
+overflow: hidden;
+transition: all .5s linear;
+ 
+border-radius: 10%;
+
+}
+
+span {
+display: inline-block;
+transition: .3s all linear;
+  
+}
+span:hover {
+   
+transform: rotate(45deg);
+transition: .3s all linear;
+}
+
+
+input {
+width: 0;
+height: 0;
+transition: all .3s linear;
+appearance: none;
+}
+label:hover {
+color: blue;
+}
+label:hover ~ img {
+height: 14rem;
+margin-top: 0.5em;
+  margin-bottom: 0.5em;
+
+}
+img {
+cursor: grabbing;
+}
+img:hover {
+ height: 14rem;
+margin-top: 0.5em;
+margin-left: 5.5rem;
+  margin-bottom: 0.5em;
+
+}
+input:checked ~ label {
+
+font-weight: bold;
+}
+input:checked ~ img {
+ margin-top: 0.5em;
+  margin-bottom: 0.5em;
+
+cursor: grab;
+transition: all .3s linear;
+height: 14rem;
+}
+ label {
+  font-size: calc( (100vw - 30rem)/(80 - 30) * (1.5 - 1) + 1rem);
+cursor: pointer; 
+margin-left: 1em;
+  
+}
+
+@media screen and (width <= 1100px) {
+input:checked ~ img {
+  
+height: 12rem;
+}
+label:hover ~ img {
+height: 12rem;
+   
+}
+
+}
+
+@media screen  and (width <=820px){
+label {
+font-size: calc( (100vw - 30rem)/(80 - 30) * (1.5 - 1) + 1rem);;
+}
+  .wrapper {
+height: 70em;
+  }
+label:hover {
+   color: black;
+
+}
+input:checked ~ label {
+
+font-weight: normal;
+color: blue;
+}
+
+ input:checked ~ img {
+  margin-left: 2.5rem;
+height: 8rem;
+margin-bottom: 0;
+}
+ input:not(:checked) ~ img {
+  margin-left: 2.5rem;
+height: 0rem;
+  
+}
+
+}
+@media screen  and (width <=765px){
+input:not(:checked) ~ img {
+  margin-left: 2.5rem;
+height: 0rem;
+}
+label:hover ~ img {
+height: 10rem;
+
+}
+
+}
+@media screen  and (width <=572px){
+   input:not(:checked) ~ img {
+  margin-left: 2.5rem;
+height: 0rem;
+}
+label:hover ~ img {
+height: 7rem;  
+}
+}
+@media screen  and (width <=460px){
+ input:not(:checked) ~ img {
+  margin-left: 2.5rem;
+height: 0rem;
+}
+label:hover ~ img {
+height: 6rem;
+   
+}
+}
+@media screen  and (width <=320px){
+.wrapper {
+height: 33.75em;
+}
+h1 {
+margin: 0;
+}
+input:checked ~ img {
+  margin-left: 1rem;
+height: 6rem;
+margin-bottom: .55rem;
+}
+label:hover ~ img {
+height: 5rem;
+   
+}
+label {
+margin-left: 0;
+}
+ input:not(:checked) ~ img {
+  margin-left: 1rem;
+height: 0rem;
+  
+}
+.one {
+margin-left: 56%;
+}
+.two {
+margin-left: 41.6%;
+}
+.three {
+margin-left: 42%;
+}
+.four {
+margin-left: 66%;
+}
+.five {
+margin-left: 52.5%;
+}
+}
+
+@media screen  and (width >1520px){
+ input:checked ~ img {
+height: 17rem;
+}
+label:hover ~ img {
+height: 17rem;
+}
+img:hover {
+ margin-left: 5.5rem;
+height: 19rem; 
+}
+}
+@media screen  and (width >=1920px){
+.wrapper{
+ margin: 0;
+ height: 62em;
+}
+img {
+width: 50%;
+}
+ input:checked ~ img {
+  margin-left: 9.5rem;
+height: 19rem;
+}
+label:hover ~ img {
+height: 19rem;
+margin-left: 9.5rem;
+}
+img:hover {
+ margin-left: 9.5rem;
+height: 19rem; 
+}
+.one {
+margin-left: 13%;
+}
+.two {
+margin-left: 39%;
+}
+.three {
+margin-left: 51%;
+}
+.four {
+margin-left: 51%;
+}
+.five {
+margin-left: 43.5%;
+}
+}
